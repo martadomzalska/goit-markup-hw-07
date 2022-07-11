@@ -1,0 +1,32 @@
+$primaryFont: "Roboto";
+.contact-menu {
+  margin-left: 345px;
+}
+.contact-menu__link {
+  text-decoration: none;
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: getColor("secondary");
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.contact-menu__link--left {
+  margin-right: 30px;
+}
+.contact-menu__icon {
+  fill: getColor("secondary");
+  margin-right: 10px;
+
+  .contact-menu__link:hover & {
+    fill: getColor("accent");
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
