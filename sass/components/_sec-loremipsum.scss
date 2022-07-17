@@ -1,0 +1,42 @@
+@import url(../utils/_colors.scss);
+$primaryFont: "Roboto";
+
+.text-section {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+.text-section__item {
+  width: 270px;
+}
+.text-section__background {
+  width: 270px;
+  height: 120px;
+  background: getColor("secondBackground");
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 94px;
+  margin-bottom: 30px;
+}
+.text-section__headline {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: getColor("primary");
+  margin-bottom: 10px;
+}
+.text-section__paragraph {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: getColor("secondary");
+}
